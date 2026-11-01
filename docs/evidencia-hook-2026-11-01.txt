@@ -1,0 +1,34 @@
+
+> portabilidad-tareas@0.1.0 check
+> npm run lint && npm run format:check && npm run deps:check && npm run test
+
+
+> portabilidad-tareas@0.1.0 lint
+> eslint src tests
+
+
+> portabilidad-tareas@0.1.0 format:check
+> prettier --check src tests
+
+Checking formatting...
+All matched files use Prettier code style!
+
+> portabilidad-tareas@0.1.0 deps:check
+> depcruise src --config .dependency-cruiser.cjs
+
+
+✔ no dependency violations found (3 modules, 2 dependencies cruised)
+
+
+> portabilidad-tareas@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.5 C:/Users/mauri/OneDrive/Escritorio/Coordi(aplicaciones web)/ecclesia-portabilidad-prueba
+
+
+ Test Files  1 passed (1)
+      Tests  1 passed (1)
+   Start at  16:10:42
+   Duration  287ms (import 44%, transform 29%, worker 15%, tests 10%, environment 1%)
+
